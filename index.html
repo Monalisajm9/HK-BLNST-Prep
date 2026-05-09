@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="zh-Hant-HK">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HK BLNST Prep</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="hero">
+        <div>
+          <p class="eyebrow">Practice Questions</p>
+          <h1>HK BLNST Prep</h1>
+          <p class="intro">Practice questions for Basic Law and Hong Kong National Security Law.</p>
+        </div>
+        <div class="score-panel" aria-label="學習進度">
+          <span>已答題目</span>
+          <strong id="answeredCount">0</strong>
+          <small id="accuracyText">準確率 0%</small>
+          <button id="resetProgress" class="secondary compact">重設進度</button>
+        </div>
+      </section>
+
+      <section class="practice-panel">
+        <div class="toolbar">
+          <label>
+            範圍
+            <select id="categorySelect"></select>
+          </label>
+          <button id="shufflePractice" class="secondary">隨機抽題</button>
+        </div>
+        <article class="quiz-card">
+          <div class="question-meta">
+            <span id="practiceCategory"></span>
+            <span id="practiceProgress"></span>
+          </div>
+          <h2 id="practiceQuestion"></h2>
+          <div id="practiceOptions" class="options"></div>
+          <div id="practiceFeedback" class="feedback" aria-live="polite"></div>
+          <div class="actions">
+            <button id="prevQuestion" class="secondary">上一題</button>
+            <button id="nextQuestion">下一題</button>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      內容參考香港《基本法》官方網站：
+      <a href="https://www.basiclaw.gov.hk/tc/basiclaw/" target="_blank" rel="noreferrer">basiclaw.gov.hk</a>。
+      《香港國安法》請以
+      <a href="https://www.isd.gov.hk/nationalsecurity/chi/law.html" target="_blank" rel="noreferrer">政府維護國家安全網頁</a>
+      及官方全文為準。此 app 只作溫習用途，正式考試請以官方資料及招聘公告為準。
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
